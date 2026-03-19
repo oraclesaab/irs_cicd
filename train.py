@@ -83,8 +83,6 @@ def save_model(model):
     print(f"💾 Model saved at: {model_path}")
 
     return model_path
-    
-model_path = save_model(model)
 
 def register_model(model_path, model_name):
     print("🔗 Connecting to Azure ML...")
