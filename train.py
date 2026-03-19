@@ -114,12 +114,12 @@ def main():
     args = parser.parse_args()
 
     model, acc = train_model()
-    #model_path = save_model(model)
+    model_path = save_model(model)
     register_model(model_path, args.model_name)
 
 
 if __name__ == "__main__":
     main()
-    model_path = "outputs/model.pkl"
+    # model_path = "outputs/model.pkl"
     register_model(model_path, args.model_name)
 
