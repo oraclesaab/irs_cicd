@@ -120,9 +120,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+    model_path = "outputs/model.pkl"
     register_model(model_path, args.model_name)
 
-
-if __name__ == "__main__":
-    main()
