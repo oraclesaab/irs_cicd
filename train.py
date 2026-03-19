@@ -121,5 +121,13 @@ def main():
 if __name__ == "__main__":
     main()
     # model_path = "outputs/model.pkl"
+    import os
+
+    output_dir = "outputs"
+    os.makedirs(output_dir, exist_ok=True)
+    model_path = os.path.join(output_dir, "model.pkl")
+    joblib.dump(model, model_path)
+    
+    # Register model
     register_model(model_path, args.model_name)
 
